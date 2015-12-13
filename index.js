@@ -50,7 +50,7 @@ function datePartValidate(idNumber) {
 }
 
 function controlDigitValidate(idNumber) {
-    var checkDigit = parseInt(idNumber[idNumber.length - 1], 10);
+    var checkDigit = parseInt(idNumber[12], 10);
 
     var oddDigitsSum = 0;
 
@@ -86,15 +86,15 @@ function parseDateOfBirth(idNumber) {
     //get year, and assume century
     var currentYear = new Date().getFullYear();
     var currentCentury = Math.floor(currentYear/100)*100;
-    var yearPart = currentCentury + Number(idNumber.substring(0,2));
+    var yearPart = currentCentury + parseInt(idNumber.substring(0,2), 10);
     if (yearPart > currentYear) {
         yearPart -= 100; //must be last century
     }
     
     //In Javascript, Jan=0. In ID Numbers, Jan=1.
-    var monthPart = Number(idNumber.substring(2,4))-1;
+    var monthPart = parseInt(idNumber.substring(2,4), 10)-1;
 
-    var dayPart = Number(idNumber.substring(4,6));
+    var dayPart = parseInt(idNumber.substring(4,6), 10);
 
     var dateOfBirth = new Date(yearPart, monthPart, dayPart);
 
@@ -114,12 +114,12 @@ function parseIsFemale(idNumber) {
     if (!regexpValidate(idNumber)) {
         return undefined;
     }
-    return Number(idNumber[6]) <= 4;
+    return parseInt(idNumber[6], 10) <= 4;
 }
 
 function parseIsSouthAfricanCitizen(idNumber) {
     if (!regexpValidate(idNumber)) {
         return undefined;
     }
-    return Number(idNumber[6]) === 0;
+    return parseInt(idNumber[10], 10) === 0;
 }
