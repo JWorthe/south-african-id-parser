@@ -57,4 +57,22 @@ describe('South African ID Number Parsing', function() {
                 .to.equal(validIdNumber.isSouthAfricanCitizen);
         });
     });
+
+    it('should correctly parse valid ID numbers', function() {
+        validIdNumbers.forEach(function(validIdNumber) {
+            var info = saIdParser.parse(validIdNumber.idNumber);
+            expect(info.isValid).to.equal(true);
+            expect(info.dateOfBirth.getTime()).to.equal(validIdNumber.dateOfBirth.getTime());
+            expect(info.isMale).to.equal(validIdNumber.isMale);
+            expect(info.isFemale).to.equal(validIdNumber.isFemale);
+            expect(info.isSouthAfricanCitizen).to.equal(validIdNumber.isSouthAfricanCitizen);
+        });
+    });
+
+    it('should correctly parse invalid ID numbers', function() {
+        invalidIdNumbers.forEach(function(invalidIdNumber) {
+            var info = saIdParser.parse(invalidIdNumbers.idNumber);
+            expect(info).to.deep.equal({isValid: false});
+        });
+    });
 });

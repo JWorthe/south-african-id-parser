@@ -7,10 +7,8 @@
     "test": "mocha"
   },
   "keywords": [
-    "South",
-    "Africa",
-    "ID",
-    "Number"
+    "South Africa",
+    "ID Number"
   ],
   "author": "Justin Worthe <justin.worthe@gmail.com>",
   "license": "ISC",

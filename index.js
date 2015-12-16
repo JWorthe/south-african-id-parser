@@ -8,14 +8,10 @@ module.exports = {
 };
 
 function parse(idNumber) {
-    if (typeof(idNumber) !== 'string') {
-        return undefined;
-    }
-
     var isValid = validate(idNumber);
     if (!isValid) {
         return {
-            valid: false
+            isValid: false
         };
     }
 
