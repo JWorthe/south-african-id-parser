@@ -96,7 +96,7 @@ var validIdNumber = '9001049818080';
 var isFemale = saIdParser.parseIsFemale(validIdNumber);
 var isMale = saIdParser.parseIsMale(validIdNumber);
 
-//isFamale === false
+//isFemale === false
 //isMale === true
 ```
 
