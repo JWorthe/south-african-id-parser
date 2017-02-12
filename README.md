@@ -19,6 +19,31 @@ and [here](http://knowles.co.za/generating-south-african-id-numbers/).
 Usage
 -----
 
+Download the library from NPM using the following command in a terminal:
+
+```
+npm install --save south-african-id-parser
+```
+
+### Usage In NodeJS
+
+```
+var saIdParser = require('south-african-id-parser');
+var info = saIdParser.parse('9001049818080');
+```
+
+### Usage In the Browser
+
+When used in the browser, the library will add the `saIdParser` object
+to the window for you to use.
+
+```
+<script src="south-african-id-parser.js"></script>
+<script>
+    var info = saIdParser.parse('9001049818080');
+</script>
+```
+
 ### Parse Everything
 
 The package exposes the `.parse(idNumber)` method for calling all of

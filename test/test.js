@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var saIdParser = require('../index.js');
+var saIdParser = require('../south-african-id-parser.js');
 
 describe('South African ID Number Parsing', function() {
     var validIdNumbers = [{
