@@ -1,6 +1,8 @@
 South African ID Number Parser
 ==============================
 
+[![Build Status](https://travis-ci.org/JWorthe/south-african-id-parser.svg?branch=master)](https://travis-ci.org/JWorthe/south-african-id-parser)
+
 The ID Numbers issued in South Africa follow a regular format that you
 can use to derive some information about them. The following
 information is available:
