@@ -1,6 +1,6 @@
 {
   "name": "south-african-id-parser",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A library for parsing and validating South African ID Numbers.",
   "main": "south-african-id-parser.js",
   "scripts": {
