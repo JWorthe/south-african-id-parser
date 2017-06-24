@@ -141,7 +141,8 @@ var isSouthAfricanCitizen = saIdParser.parseIsSouthAfricanCitizen(validIdNumber)
 //isSouthAfricanCitizen === true
 ```
 
-### License
+License
+-------
 
 Copyright 2017, Justin Worthe
 

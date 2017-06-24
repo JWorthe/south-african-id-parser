@@ -12,12 +12,17 @@
   ],
   "author": {
     "name": "Justin Worthe",
-    "email" : "justin.worthe@gmail.com",
+    "email" : "justin@worthe-it.co.za",
     "url" : "http://worthe-it.co.za"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/JWorthe/south-african-id-parser.git"
+  },
+  "homepage": "https://github.com/JWorthe/south-african-id-parser",
+  "bugs": {
+    "url" : "https://github.com/JWorthe/south-african-id-parser/issues",
+    "email" : "justin@worthe-it.co.za"
   },
   "license": "(ISC OR GPL-3.0)",
   "devDependencies": {
