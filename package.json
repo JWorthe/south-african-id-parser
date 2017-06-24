@@ -4,7 +4,7 @@
   "description": "A library for parsing and validating South African ID Numbers.",
   "main": "south-african-id-parser.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha && jshint **/*.js"
   },
   "keywords": [
     "South Africa",
@@ -21,7 +21,8 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4"
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "jshint": "^2.9.5"
   }
 }

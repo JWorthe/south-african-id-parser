@@ -1,7 +1,15 @@
+'use strict';
+/*jshint
+  node: true
+*/
+
+var mocha = require('mocha');
+var describe = mocha.describe;
+var it = mocha.it;
 var expect = require('chai').expect;
 var saIdParser = require('../south-african-id-parser.js');
 
-describe('South African ID Number Parsing', function() {
+describe('South African ID Number Parsing', function () {
     var validIdNumbers = [{
         idNumber: '9001049818080',
         dateOfBirth: new Date(1990, 0, 4),
