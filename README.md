@@ -140,3 +140,13 @@ var isSouthAfricanCitizen = saIdParser.parseIsSouthAfricanCitizen(validIdNumber)
 
 //isSouthAfricanCitizen === true
 ```
+
+### License
+
+Copyright 2017, Justin Worthe
+
+This library can be used free of charge under either the ISC license
+or the GNU GPL 3.0.
+
+- [https://opensource.org/licenses/ISC](https://opensource.org/licenses/ISC)
+- [http://www.gnu.org/licenses/gpl-3.0.html](http://www.gnu.org/licenses/gpl-3.0.html)
